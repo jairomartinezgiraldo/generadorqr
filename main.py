@@ -26,7 +26,7 @@ class DataProcessor:
                 return False, "El archivo Excel no contiene datos", None
             
             # Verificar que el DataFrame tenga las columnas necesarias
-            required_columns = ['id', 'nombre']  # Ajustar según necesidades
+            required_columns = ['FORMATO_1', 'ID _2']  # Ajustar según necesidades
             missing_columns = [col for col in required_columns if col not in df.columns]
             
             if missing_columns:
@@ -237,7 +237,7 @@ class StreamlitApp:
                 # Usar checkboxes para seleccionar múltiples campos
                 selected_fields = []
                 for field in available_fields:
-                    if st.checkbox(field, value=field in ['id', 'nombre','cantidad']):  # Por defecto seleccionar id y nombre
+                    if st.checkbox(field, value=field in ['FORMATO_1', 'ID _2','LOTE_3','PESO Kg_4','UNID. MEDIDA_5']):  # Por defecto seleccionar id y nombre
                         selected_fields.append(field)
                 
                 st.session_state.selected_fields = selected_fields
@@ -308,3 +308,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#streamlit
+#pandas
+#openpyxl
+#qrcode
+#reportlab
+#pillow
