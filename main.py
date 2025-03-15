@@ -315,7 +315,7 @@ class StreamlitApp:
             example_df = pd.DataFrame(example_data)
             st.dataframe(example_df, use_container_width=True)
             
-            st.write("El archivo debe contener al menos las columnas y nombres mostrados en la tabla de ejemplo.")
+            st.write("El archivo debe contener al menos las columnas y nombres mostrados en la tabla de ejemplo..")
 
 # Función principal que ejecuta la aplicación
 def main():
