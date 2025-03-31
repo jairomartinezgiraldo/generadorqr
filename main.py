@@ -49,7 +49,7 @@ class QRGenerator:
         # Concatenar los campos seleccionados con el separador
         
         #concatenated_data = separator
-        concatenated_data = "AR-QR" + separator
+        concatenated_data = "AR_QR" + separator
         for field in selected_fields:
             value = str(record.get(field, ''))
             concatenated_data += value + separator
