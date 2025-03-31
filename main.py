@@ -249,7 +249,7 @@ class StreamlitApp:
                 # Usar checkboxes para seleccionar múltiples campos
                 selected_fields = []
                 for field in available_fields:
-                    if st.checkbox(field, value=field in [ 'ID','LOTE','PESO Kg','UNID. MEDIDA']):  # Por defecto seleccionar id y nombre
+                    if st.checkbox(field, value=field in [ 'ID _2','LOTE_3','PESO Kg_3','UNID. MEDIDA_4']):  # Por defecto seleccionar id y nombre
                         selected_fields.append(field)
                 
                 st.session_state.selected_fields = selected_fields
