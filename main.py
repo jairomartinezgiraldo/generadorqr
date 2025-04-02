@@ -148,14 +148,14 @@ class PDFGenerator:
                 
                 # Crear la tabla
                 if data:
-                    table = Table(data, colWidths=[2.5*cm, 6.5*cm])
+                    table = Table(data, colWidths=[2*cm, 5*cm])
                     table.setStyle(TableStyle([
                         ('BACKGROUND', (0, 0), (0, -1), colors.lightgrey),
                         ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
                         ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
                         ('ALIGN', (0, 0), (0, -1), 'RIGHT'),
                         ('ALIGN', (1, 0), (1, -1), 'LEFT'),
-                        ('FONTSIZE', (0, 0), (-1, -1), 8),
+                        ('FONTSIZE', (0, 0), (-1, -1), 6),
                     ]))
                     elements.append(table)
                 
@@ -315,7 +315,7 @@ class StreamlitApp:
             example_df = pd.DataFrame(example_data)
             st.dataframe(example_df, use_container_width=True)
             
-            st.write("El archivo debe contener al menos las columnas y nombres mostrados en la tabla de ejemplo..")
+            st.write("El archivo debe contener al menos las columnas y nombres mostrados en la tabla de ejemplo.")
 
 # Función principal que ejecuta la aplicación
 def main():
