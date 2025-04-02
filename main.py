@@ -121,7 +121,7 @@ class PDFGenerator:
                     elements.append(title)
                 
                 # Añadir un espaciador
-                elements.append(Spacer(1, 0.3*cm))
+                # elements.append(Spacer(1, 0.3*cm))
                 
                 # Generar código QR basado en los campos seleccionados concatenados
                 qr_image, qr_data = QRGenerator.generate_qr_concatenated(record, selected_fields)
